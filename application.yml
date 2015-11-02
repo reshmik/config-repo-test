@@ -20,11 +20,6 @@ logging:
 endpoints:
    health:
      sensitive: false
-
-spring:
-   zipkin:
-      host: zipkin-web.cfapps.io
-      port: 9410
 ---
 spring:
   profiles: cloud
