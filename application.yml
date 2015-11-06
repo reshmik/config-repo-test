@@ -13,6 +13,14 @@ eureka:
 logging:
    pattern:
      level: '%clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %5p'
+logging:
+   pattern:
+     console: '%clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %5p'
+  level:
+     io:
+        pivotal: DEBUG
+     com:
+        netflix: WARN
 
 endpoints:
    health:
