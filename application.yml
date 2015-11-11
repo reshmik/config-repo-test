@@ -24,7 +24,6 @@ spring:
 eureka:
   instance:
      nonSecurePort: 80
-
 ---
 spring:
   profiles: local
